@@ -35,7 +35,9 @@ private const val INSTANCE_POOL_CAPACITY: Int = 100
 // Feed rate
 private const val CUBE_PER_SECOND: Int = 10
 ```
-- [Instancing in filament engine](https://github.com/google/filament/pull/2607)
+
+- [How to render a renderable in different positions of one scene at a time #1513](https://github.com/google/filament/issues/1513)
+- [gltfio: Add support for "software instancing". #2607](https://github.com/google/filament/pull/2607)
 - [JBullet HelloWorld](https://github.com/bubblecloud/jbullet/blob/00b51569461391d87436369ac723e875efef0dcd/src/test/java/com/bulletphysics/demos/helloworld/HelloWorld.java)
 - [glTF-Sample-Models/2.0/Box](https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0/Box)
 
