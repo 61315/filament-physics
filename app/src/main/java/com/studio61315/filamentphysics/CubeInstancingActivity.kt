@@ -170,10 +170,14 @@ class CubeInstancingActivity : Activity() {
 			physicsController.updatePhysics()
 
 			// Applies the transformation of the instantiated rigid bodies to the Filament instances'.
+			modelViewer.engine.transformManager.openLocalTransformTransaction()
+
 			instanceRef.forEach { instance ->
 				rigidBodyRef[instance.root]?.getWorldTransform(tempTransform)?.getOpenGLMatrix(tempMatrix4x4)
 				modelViewer.engine.transformManager.setTransform(instance.root, tempMatrix4x4)
 			}
+
+			modelViewer.engine.transformManager.commitLocalTransformTransaction()
 
 			// Increments the frame counter.
 			frameNumber++
